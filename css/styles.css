@@ -1,0 +1,58 @@
+/* PR_aldushyna_TypeScript_ProductListApp */
+
+/* @media(max-width: 640px){
+    #productContainer{
+        grid-column: 1;
+    }
+}
+@media(max-width: 840px){
+    #productContainer{
+        grid-column: 3;
+    }
+} */
+
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #3c3c3b;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+#productContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#productCard{
+    background: #fff;
+    text-align: center;
+    box-shadow: 0px 6px 10px 3px rgba(0, 0, 0, 0.03);
+    font-size: 13px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+#productCard div{
+    box-shadow: 0px 6px 10px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+}
+
+.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.name{
+    font-size: 18px;
+}
+
+.description{
+    margin: 0 40px;
+}
+
+.price{
+    font-size: 18px;
+}
